@@ -1,8 +1,9 @@
+import { Joke } from ".prisma/client";
 import { Link, LoaderFunction, useLoaderData } from "remix";
 import { db } from "~/utils/db.server";
 
 type LoaderData = {
-  joke: { id: string; name: string; content: string };
+  joke: Joke;
 };
 
 export let loader: LoaderFunction = async ({ params }) => {
