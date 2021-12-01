@@ -8,7 +8,7 @@
     "dev": "remix dev",
     "postinstall": "remix setup node",
     "start": "remix-serve build",
-    "gen-db": "npm run prisma db push"
+    "gen-db": "prisma db push"
   },
   "prisma": {
     "seed": "node --require esbuild-register prisma/seed.ts"
